@@ -18,9 +18,9 @@ $social-brand-github: #000000;
 $social-brand-tumblr: #32506d;
 
 @mixin social-button($brand-color, $brand-icon) {
-  color: $brand-color;
+  color: #3dd2cc;
   background: $white;
-  border-color: $brand-color;
+  border-color: #3dd2cc;
 
   &:before {
     font-family: "FontAwesome";
@@ -30,6 +30,7 @@ $social-brand-tumblr: #32506d;
   &:focus {
     color: $white;
     background: $brand-color;
+    border-color: $brand-color;
   }
 }
 

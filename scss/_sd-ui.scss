@@ -53,6 +53,11 @@ $blockquote-bg: #f9f9f9;
   }
 }
 
+.docs-section-margin {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
 .highlighted {
   color: $primary-color;
   background: linear-gradient(135deg, darken($primary-color,7%) 0%, lighten($primary-color,7%), darken($primary-color,7%) 100%);
@@ -548,12 +553,12 @@ table {
     background: transparent;
   }
   .top-bar-inner {
-    padding: 0.3rem 0 0.2rem 1rem;
+    padding: 0.2rem 0 0.2rem 1rem;
   }
   .top-bar-text {
     padding: 0;
     @include breakpoint(medium up) {
-      line-height: 2.5rem;
+      line-height: 2rem;
     }
   }
   .menu {

@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var $    = require('gulp-load-plugins')();
+var deploy = require('gulp-gh-pages');
 
 var sassPaths = [
   'bower_components/normalize.scss/sass',
@@ -22,4 +23,9 @@ gulp.task('sass', function() {
 
 gulp.task('default', ['sass'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
